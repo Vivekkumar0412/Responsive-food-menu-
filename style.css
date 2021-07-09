@@ -2,11 +2,38 @@
   margin: 0;
   padding: 0;
 }
+/* responsive nav bar */
+
+
+
+@media screen and (max-width:882px){
+  #navbar{
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }#navbar ul li{
+    display: none;
+  }.services{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }.brands{
+    flex-direction: column;
+    background-image: none;
+  }
+}
+
+
+
+
+
 /* style of navbar */
 #navbar {
   display: flex;
   height: 15vh;
   background-color: black;
+  position: static;
 }
 #logo {
   display: flex;
@@ -36,9 +63,9 @@
 
 /* home section styling */
 
-#home {
+.home {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   background-image: url(bg.jpg);
@@ -49,6 +76,7 @@
   z-index: -1;
 }
 .container {
+
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -82,8 +110,9 @@ button {
 }
 
 /* services section */
-#services {
+.services {
   display: flex;
+  justify-content:space-evenly ;
   /* background-color: blanchedalmond; */
 }
 .text-center {
@@ -91,6 +120,8 @@ button {
 }
 .box {
   border: 2px solid brown;
+  height: 300px;
+  width: 300px;
 }
 .box img {
   height: 150px;
