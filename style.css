@@ -21,6 +21,8 @@
   }.brands{
     flex-direction: column;
     background-image: none;
+  }footer{
+    position:relative;
   }
 }
 
@@ -157,4 +159,15 @@ button {
 .brands img {
   height: 250px;
   width: 250px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  /* padding: auto; */
 }
